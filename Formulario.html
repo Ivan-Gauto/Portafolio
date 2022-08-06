@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Formulario.css" rel="stylesheet" type="text/css"/>
+        <title>Inscripcion</title>
+    </head>
+    <body>
+        <h1>FORMULARIO</h1>
+        <section>
+            <fieldset>
+                <label> Introduce tu nombre:
+                    <input type="text" required placeholder="Nombre" />
+                </label><br>
+                <br><label> Introduce tu apellido:
+                    <input type="text" required placeholder="Apellido" />
+                </label><br>
+                <br><label> Introduce tu email:
+                    <input type="email" required placeholder="Email" />
+                </label><br>
+                <br><label> Introduce tu contraseña:
+                    <input type="password" required pattern="[a-z0-5]{8,}" placeholder="Contraseña" />
+                </label><br>  
+                <br><label> Introduce tu edad:
+                    <input type="number" min="1" max="120" required placeholder="edad" />
+                </label><br>
+                <br><label> ¿Ciudad donde vives?:
+                    <select>
+                        <option value="">Seleccione una</option>
+                        <option value="1">Goya</option>
+                        <option value="2">Santa Lucia</option>
+                        <option value="3">Corrientes capital</option>
+                        <option value="4">Otra</option>
+                    </select>
+                </label><br>
+                <label><br> 
+                    Proporciona una biografia:<br> 
+                    <textarea rows="3"cols="25" placeholder="Describete..."></textarea>
+                </label><br>
+                <br><label>Estoy de acuerdo con los<a href="Terminos y condiciones.html" target="blank"> terminos 
+                    y condiciones</a><input class="checkbox" type="checkbox" required />
+                </label><br>
+                <label>
+                    <input type="submit" value="enviar" class="enviar"/>
+                </label><br>
+            </fieldset> 
+        </section> 
+    </body>
+</html>
